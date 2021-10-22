@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Konichiwa Dapp!</h1>
+  <button class="btn-success btn">Save</button>
+
+  <h1>Token Balance: {{tokenBalance}}</h1>
+  <h1>Token Total Supply: {{totalSupply}}</h1>
+
+
+  <h3>Mint</h3>
+  <input type="text" #transferAmount>
+  <input type="text" #recipient>
+  <button class = 'btn btn success' (click)='transfer(transferAmount.value, recipient.value)'>Transfer</button>
+</div>
